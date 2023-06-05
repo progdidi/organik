@@ -1,0 +1,59 @@
+@import '../../style/base/vars';
+@import '../../style/base/mixins';
+
+.product-card {
+    display: block;
+    width: 335px;
+    padding: 29px 26px 17px 30px;
+    background-color: $backgroundColor;
+    border-radius: 30px;
+    text-align: left;
+    &__tag {
+        margin-bottom: 13px;
+        display: inline-block;
+        color: #fff;
+        background-color: $mainColor;
+        padding: 5px 12px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        border-radius: 8px;
+
+    }
+    &__img {
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 13px;
+    }
+    &__about {
+        border-top: 1px solid #DEDDDD;
+        display: flex;
+        align-items: center;
+        padding-top: 9px;
+    }
+    &__price {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: $mainColor;
+        margin-right: auto;
+        
+    }
+    &__price.old {
+        text-decoration: line-through;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        color: #B8B8B8;
+        margin-right: 8px;
+    }
+}
+
+
+.rating {
+}
+.rating__star {
+}

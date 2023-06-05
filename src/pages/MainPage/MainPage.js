@@ -3,6 +3,9 @@ import aboutImg from './images/about/about.png';
 import aboutItem1 from './images/about/item1.svg';
 import aboutItem2 from './images/about/item2.svg';
 
+import ProductCard from '../../components/ProductCard/ProductCard';
+import { products } from '../../helpers/products/products';
+
 const MainPage = () => {
     return ( 
         <>
@@ -64,7 +67,19 @@ const MainPage = () => {
                 <h6 className="categories__subtitle">Categories </h6>
                 <h4 className="categories__title">Our Products</h4>
                 <div className="categories__items">
-
+                    {products.map((product) => {
+                        return (
+                            <ProductCard
+                                key={product.id}
+                                tag={product.tag}
+                                name={product.title} 
+                                price={product.price}
+                                oldprice={product.oldprice}
+                                img={product.img} 
+                                link={product.link}
+                            />
+                        )                            
+                    })}
                 </div>
                 <button className="categories__btn">Load More</button>
             </div>

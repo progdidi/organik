@@ -154,6 +154,9 @@
 
     &__items {
         margin-bottom: 122px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
     }
 
     &__btn {
