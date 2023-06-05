@@ -1,0 +1,89 @@
+@import '../../style/base/vars';
+
+.footer {
+    &__title {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 24px;
+    }
+    &__top {
+        &-inner {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 107px;
+            .footer__contacts {
+                text-align: right;
+                padding-right: 50px;
+                border-right: 1px solid #D5D5D5;
+                &-item {
+                    margin-bottom: 40px;
+                }
+                &-title {
+                }
+                &-text {
+                }
+            }
+
+            .footer__info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 42px;
+                border-right: 1px solid #D5D5D5;
+                &-img {
+                    margin-bottom: 23px;
+                }
+                &-text {
+                    margin-bottom: 49px;
+                    text-align: center;
+                    max-width: 543px;
+                }
+                .social-list {
+                    display: flex;
+                    gap: 15px;
+                    &__item {
+                    }
+                    
+                    &__link {
+                        background-color: #EFF6F1;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &-img {
+                        }
+                    }
+                }
+            }
+
+            .footer__menu {
+                padding-left: 50px;
+                &-list {
+                }
+                &-item {
+                    margin-bottom: 15px;
+                }
+                &-link {
+                }
+            }
+        }
+    }
+
+    &__policy {
+        border-top: 1px solid #D5D5D5;
+        padding: 17px 0 30px;
+        &-text {
+            text-align: center;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+
+
+
+
