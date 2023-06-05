@@ -1,0 +1,34 @@
+@mixin section__subtitle {
+    font-family: 'Yellowtail', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+@mixin section__title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 59px;
+}
+
+@mixin main-button {    
+    border-radius: 16px;
+    width: 220px;    
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;    
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    padding: 28px 39px;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../../images/linkArrow.svg);
+        width: 19px;
+        height: 19px;
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+}
