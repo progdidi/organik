@@ -12,6 +12,9 @@ import { products } from '../../helpers/products/products';
 //eco
 import ecoImg from './images/eco/eco.png';
 
+//news
+import NewsArticle from '../../components/NewsArticle/NewsArticle';
+
 const MainPage = () => {
     return ( 
         <>
@@ -184,12 +187,37 @@ const MainPage = () => {
         <div className="categories">
             <div className="container__fluid">
                 <div className="categories__items">
-                    <a href="" className="categories__item"><p className="categories__item-text"></p></a>
-                    <a href="" className="categories__item"><p className="categories__item-text"></p></a>
-                    <a href="" className="categories__item"><p className="categories__item-text"></p></a>
+                    <a href="" className="categories__item categories__item-one">
+                        <p className="categories__item-text">Organic Juice</p>
+                    </a>
+                    <a href="" className="categories__item categories__item-two">
+                        <p className="categories__item-text">Organic Food</p>
+                    </a>
+                    <a href="" className="categories__item categories__item-three">
+                        <p className="categories__item-text">Nuts Cookis</p>
+                    </a>
                 </div>
             </div>
         </div>
+
+        <section className="news">
+            <div className="container">
+                <div className="news__top">
+                <div className="news__top-left">
+                        <h6 className="news__subtitle">News </h6>
+                        <h4 className="news__title">Discover weekly content about organic food, & more</h4>
+                    </div>
+                    
+                    <button className="news__btn">More News</button>
+                </div>
+
+                <div className="news__items">
+                    <NewsArticle/>
+                </div>
+            </div>
+        </section>
+
+
         </>
      );
 }
