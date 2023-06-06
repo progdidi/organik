@@ -1,15 +1,15 @@
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import MainPage from "./pages/MainPage/MainPage";
-import Newsletter from "./components/Newsletter/Newsletter";
+import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 
 function App() {
   return (
     <div className="App">
       <Header/>
       <main className="main">
-        <MainPage/>
-        <Newsletter/>
+        {/* <MainPage/> */}
+        <AboutUsPage/>
       </main>
       <Footer/>
     </div>

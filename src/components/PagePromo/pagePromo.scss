@@ -1,0 +1,16 @@
+@import '../../style/base/vars';
+@import '../../style/base/mixins';
+
+.page-promo {
+    padding: 184px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &__title {
+        font-weight: 800;
+        font-size: 70px;
+        line-height: 82px;
+        color: $mainColor;
+        text-align: center;
+    }
+}

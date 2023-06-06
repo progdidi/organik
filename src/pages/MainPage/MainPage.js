@@ -2,6 +2,7 @@ import './mainPage.scss';
 import aboutImg from './images/about/about.png';
 import aboutItem1 from './images/about/item1.svg';
 import aboutItem2 from './images/about/item2.svg';
+import Newsletter from '../../components/Newsletter/Newsletter';
 
 //products
 import ProductCard from '../../components/ProductCard/ProductCard';
@@ -217,6 +218,7 @@ const MainPage = () => {
             </div>
         </section>
 
+        <Newsletter/>
 
         </>
      );

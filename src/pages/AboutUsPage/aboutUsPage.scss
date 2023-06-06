@@ -1,0 +1,89 @@
+@import '../../style/base/vars';
+@import '../../style/base/mixins';
+
+.about-us {
+    padding-bottom: 189px;
+    background-color: $backgroundColor;
+    &__item {
+        &-inner {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+        &-first {
+            background-color: #fff;
+            padding-top: 68px;
+            .about-us__item-info {
+                padding-bottom: 186px;
+                padding-top: 140px;
+            }
+        }
+        &-second {
+            padding-top: 193px;
+            margin-bottom: 91px;
+
+        }
+        &-img {
+        }
+        &-info {
+            max-width: 671px;
+        }
+        &-subtitle {
+            @include section__subtitle;
+            color: $greenColor;
+            margin-bottom: 6px;
+        }
+        &-title {
+            @include section__title;
+            margin-bottom: 14px;
+        }
+        &-text {
+            margin-bottom: 40px;
+        }
+        &-btn {
+            @include main-button;
+            background-color: $mainColor;
+            color: #fff;
+        }
+
+        .benefits {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 58px;
+            &__item {
+                display: flex;
+                &-img {
+                }
+                &-descr {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 29px;
+                    color: $mainColor;
+                }
+            }
+        }
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .reasons {
+        &__item {
+            &-img {
+            }
+            &-title {
+            }
+            &-text {
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
