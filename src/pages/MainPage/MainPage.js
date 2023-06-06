@@ -3,8 +3,14 @@ import aboutImg from './images/about/about.png';
 import aboutItem1 from './images/about/item1.svg';
 import aboutItem2 from './images/about/item2.svg';
 
+//products
 import ProductCard from '../../components/ProductCard/ProductCard';
 import { products } from '../../helpers/products/products';
+
+//reviews
+
+//eco
+import ecoImg from './images/eco/eco.png';
 
 const MainPage = () => {
     return ( 
@@ -62,11 +68,11 @@ const MainPage = () => {
             </div>
         </section>
 
-        <section className="categories">
+        <section className="products">
             <div className="container">
-                <h6 className="categories__subtitle">Categories </h6>
-                <h4 className="categories__title">Our Products</h4>
-                <div className="categories__items">
+                <h6 className="products__subtitle">Categories </h6>
+                <h4 className="products__title">Our Products</h4>
+                <div className="products__items">
                     {products.map((product) => {
                         return (
                             <ProductCard
@@ -81,9 +87,109 @@ const MainPage = () => {
                         )                            
                     })}
                 </div>
-                <button className="categories__btn">Load More</button>
+                <button className="products__btn">Load More</button>
             </div>
         </section>
+
+        <section className="review">
+            <div className="container">
+                <div className="review__inner">
+                    <h6 className="review__subtitle">Testimonial </h6>
+                    <h4 className="review__title">What Our Customer Saying?</h4>
+                    <div className="review__slider"></div>
+                    <div className="review__numbers">
+                        <div className="review__number">
+                            <h5 className="review__number-title">100%</h5>
+                            <p className="review__number-text">Organic</p>
+                        </div>
+                        <div className="review__number">
+                            <div className="review__number-round">
+                                <h5 className="review__number-title">285</h5>
+                                <p className="review__number-text">Active Product</p>
+                            </div>
+                            
+                        </div>
+                        <div className="review__number">
+                            <h5 className="review__number-title">350+</h5>
+                            <p className="review__number-text">Organic Orchads</p>
+                        </div>
+                        <div className="review__number">
+                            <h5 className="review__number-title">25+</h5>
+                            <p className="review__number-text">Years of Farming</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section className="offer">
+            <div className="container">
+                <div className="offer__top">
+                    <div className="offer__top-left">
+                        <h6 className="offer__subtitle">Offer </h6>
+                        <h4 className="offer__title">We Offer Organic For You</h4>
+                    </div>
+                    
+                    <button className="offer__btn">View All Product</button>
+                </div>
+                
+
+                <div className="offer__items">
+                    {products.map((product) => {
+                            if(product.offer === true) {
+                                return (
+                                    <ProductCard
+                                        key={product.id}
+                                        tag={product.tag}
+                                        name={product.title} 
+                                        price={product.price}
+                                        oldprice={product.oldprice}
+                                        img={product.img} 
+                                        link={product.link}
+                                    />
+                                ) 
+                            }
+                                                       
+                        })}
+                </div>
+            </div>
+        </section>
+
+        <section className="eco">
+            <div className="container__fluid">
+                <div className="eco__inner">
+                    <img src={ecoImg} alt="" className="eco__img" />
+                    <div className="eco__info">
+                        <h6 className="eco__info-subtitle">Eco Friendly </h6>
+                        <h4 className="eco__info-title">Econis is a Friendly Organic Store</h4>
+
+                        <div className="eco__item">
+                            <h6 className="eco__item-title">Start with Our Company First</h6>
+                            <p className="eco__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.</p>
+                        </div>
+                        <div className="eco__item">
+                            <h6 className="eco__item-title">Learn How to Grow Yourself</h6>
+                            <p className="eco__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.</p>
+                        </div>
+                        <div className="eco__item">
+                            <h6 className="eco__item-title">Farming Strategies of Today</h6>
+                            <p className="eco__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div className="categories">
+            <div className="container__fluid">
+                <div className="categories__items">
+                    <a href="" className="categories__item"><p className="categories__item-text"></p></a>
+                    <a href="" className="categories__item"><p className="categories__item-text"></p></a>
+                    <a href="" className="categories__item"><p className="categories__item-text"></p></a>
+                </div>
+            </div>
+        </div>
         </>
      );
 }

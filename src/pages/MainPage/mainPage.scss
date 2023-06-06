@@ -27,7 +27,7 @@
 
     &__link {
         @include main-button;
-        background-color: #EFD372;
+        background-color: $yellowColor;
         color: $mainColor;
         &-img {
 
@@ -137,7 +137,7 @@
     }
 }
 
-.categories {
+.products {
     text-align: center;
     margin-bottom: 200px;
     &__title {
@@ -166,6 +166,135 @@
         margin: 0 auto;
     }
 }
+
+.review {
+    padding: 165px 0;
+    background-image: url(images/review/reviewBg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &__inner {
+        max-width: 1108px;
+        margin: 0 auto;
+    }
+    &__subtitle {
+        @include section__subtitle;
+        text-align: center;
+        color: $greenColor;
+        margin-bottom: 8px;
+    }
+    &__title {
+        @include section__title;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    &__slider {
+        padding-bottom: 102px;
+        border-bottom: 1px solid #E0E0E0;
+        margin-bottom: 102px;
+
+    }
+    &__numbers {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__number {
+        width: 211px;
+        height: 211px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #F1F1F1;
+        border: 5px solid #fff;
+        outline: 5px solid $greenColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-title {
+            @include section__title;
+        }
+        &-text {
+            font-weight: 600;
+            color: $mainColor;
+        }
+    }
+    
+}
+
+.offer {
+    background-color: $mainColor;
+    padding: 200px 0;
+    &__top {
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__subtitle {
+        @include section__subtitle;
+        color: $greenColor;
+    }
+
+    &__title {
+        @include section__title;
+        color: #fff;
+    }
+
+    &__btn {
+        @include main-button;
+        background-color: $yellowColor;
+        width: 256px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 21px;
+    }
+}
+
+.eco {
+    &__inner {
+        display: flex;
+    }
+    &__img {
+    }
+    &__info {
+        margin: 100px 0;
+        padding: 78px 0px 78px 89px;
+        max-width: 700px;
+        border-radius: 30px;
+        position: absolute;
+        right: 89px;
+        z-index: 2;
+        background-color: #fff;
+        &-subtitle {
+            @include section__subtitle;
+            color: $greenColor;
+            margin-bottom: 8px;
+        }
+        &-title {
+            @include section__title;
+            margin-bottom: 35px;
+        }
+        .eco__item {
+            margin-bottom: 35px;
+            &-title {
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 29px;
+                margin-bottom: 7px;
+            }
+            &-text {
+            }
+        }
+    }
+}
+
+
+
+
 
 
 
