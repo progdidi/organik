@@ -1,0 +1,150 @@
+@import '../../style/base/vars';
+@import '../../style/base/mixins';
+
+.product {
+    padding-top: 133px;
+    margin-bottom: 140px;
+    &__main {
+        display: flex;
+        gap: 88px;
+        align-items: center;
+        margin-bottom: 90px;
+        &-media {
+            max-width: 591px;
+            padding: 38px 35px;
+            background-color: $backgroundColor;
+            border-radius: 30px;
+        }
+        &-tag {
+            display: inline-block;
+            color: #fff;
+            background-color: $mainColor;
+            padding: 5px 12px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px;
+            border-radius: 8px;
+            margin-bottom: 0;
+        }
+        &-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-info {
+            max-width: 685px;
+            padding-top: 107px;
+        }
+    }
+
+    &__add {
+        &-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 27px;
+        }
+        &-btn {
+            padding: 23px 57px;
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 34px;
+            border-radius: 16px;
+            color: $mainColor;
+            background-color: #EFF6F1;
+            &.descr {
+                width: 363px;
+            }
+            &.info {
+                width: 309px;
+            }
+        }
+        &-info {
+            max-width: 1137px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        &-text {
+        }
+    }
+
+    &__title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 47px;
+        margin-bottom: 9px;
+    }
+    &__rating {
+        margin-bottom: 9px;
+    }
+    &__price {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        &-old {
+            text-decoration: line-through;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+            color: #B8B8B8;
+            margin-right: 8px;
+        }
+        &-new {
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 34px;
+            color: $mainColor;
+        }
+    }
+    
+    &__descr {
+        margin-bottom: 35px;
+    }
+    &__buy {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .product__quantity-label {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+            color: $mainColor;
+        }
+        .product__quantity-input {
+            width: 134px;
+            background: #FFFFFF;
+            border: 2px solid #274C5B;
+            border-radius: 16px;
+            padding: 28px 50px;
+            height: auto;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23px;
+            color: $mainColor;
+        }
+        .product__buy-btn {
+            @include main-button;
+            color: #fff;
+            background-color: $mainColor;
+            width: 213px;
+        }
+    }
+}
+
+
+.related {
+    margin-bottom: 140px;
+    &__title {
+        @include section__title;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+    }
+}
