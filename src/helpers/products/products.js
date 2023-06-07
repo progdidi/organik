@@ -10,6 +10,10 @@ import beanOrg from './images/beanOrganik.png';
 import hazelnutBr from './images/hazelnutBrown.png';
 import onion from './images/onion.png';
 import cabbage from './images/cabbage.png';
+import mung from './images/mung.png';
+import hazelnutWhite from './images/hazelnutWhite.png';
+import corn from './images/corn.png';
+import almonds from './images/almonds.png';
 
 const products = [
     {
@@ -121,6 +125,46 @@ const products = [
         price: 12.00,
         oldprice: 20.00,
         id: 12,
+        offer: true
+    },
+
+    {
+        img: mung,
+        tag: 'Health',
+        title:'Mung Bean',
+        price: 11.00,
+        oldprice: 20.00,
+        id: 13,
+        offer: true
+    },
+
+    {
+        img: hazelnutWhite,
+        tag: 'Nuts',
+        title:'White Hazelnut',
+        price: 12.00,
+        oldprice: 20.00,
+        id: 14,
+        offer: true
+    },
+
+    {
+        img: corn,
+        tag: 'Fresh',
+        title:'Fresh Corn',
+        price: 17.00,
+        oldprice: 20.00,
+        id: 15,
+        offer: true
+    },
+
+    {
+        img: almonds,
+        tag: 'Fresh',
+        title:'Organic Almonds',
+        price: 15.00,
+        oldprice: 20.00,
+        id: 16,
         offer: true
     }
 ]

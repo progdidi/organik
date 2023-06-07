@@ -1,0 +1,13 @@
+@import '../../style/base/vars';
+@import '../../style/base/mixins';
+
+.catalog {
+    padding-top: 90px;
+    margin-bottom: 140px;
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+    }
+}
