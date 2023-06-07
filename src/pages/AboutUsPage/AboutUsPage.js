@@ -1,6 +1,9 @@
 import './aboutUsPage.scss';
+
+//components
 import PagePromo from '../../components/PagePromo/PagePromo';
 import banner from './images/banner.png';
+import Newsletter from '../../components/Newsletter/Newsletter';
 
 //items
 import item1 from './images/aboutItem1.png';
@@ -19,6 +22,10 @@ import reason4 from './images/reason4.svg';
 //experts
 import ExpertCard from '../../components/ExpertCard/ExpertCard';
 import {experts} from '../../helpers/experts/experts';
+
+//category-offer
+import CategoryCard from '../../components/CategoryCard/CategoryCard';
+import {categories} from '../../helpers/categories/categories';
 
 const AboutUsPage = () => {
     return ( 
@@ -131,6 +138,26 @@ const AboutUsPage = () => {
                     </div>
                 </div>
             </section>
+
+            <section className="category-offer">
+                <div className="container">
+                    <h6 className="category-offer__subtitle">About Us</h6>
+                    <h4 className="category-offer__title">What We Offer for You</h4>
+                    <div className="category-offer__items">
+                        {categories.map((category) => {
+                            return (
+                                <CategoryCard
+                                    key={category.id}
+                                    img={category.img}
+                                    name={category.name} 
+                                />
+                            )                            
+                        })}
+                    </div>
+                </div>
+            </section>
+
+            <Newsletter/>
         </>
      );
 }

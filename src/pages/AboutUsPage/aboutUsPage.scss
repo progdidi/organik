@@ -162,6 +162,32 @@
     }
 }
 
+.category-offer {
+    text-align: center;
+    padding: 188px 0;
+    background-color: $mainColor;
+    color: #fff;
+    margin-bottom: 141px;
+    &__subtitle {
+        @include section__subtitle;
+        color: $greenColor;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        @include section__title;
+        color: #fff;
+        margin-bottom: 33px;
+        
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 21px;
+    }
+}
+
 
 
 
