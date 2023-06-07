@@ -1,0 +1,112 @@
+@import '../../style/base/vars';
+@import '../../style/base/mixins';
+
+.services {
+    padding: 202px 0px;
+    background-color: $backgroundColor;
+    &__subtitle {
+        text-align: center;
+        @include section__subtitle;
+        color: $greenColor;
+        margin-bottom: 6px;
+    }
+    &__title {
+        max-width: 482px;
+        margin: 0 auto;
+        @include section__title;
+        margin-bottom: 35px;
+    }
+    &__inner {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    &__items {
+        padding-top: 135px;
+        &.left {
+            .services__item {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                text-align: right;
+            }
+        }
+
+        &.right {
+            .services__item {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+        }
+    }
+    &__item {
+        max-width: 396px;
+        margin-bottom: 39px;
+        &-img {
+            margin-bottom: 5px;
+        }
+        &-title {
+            margin-bottom: 5px;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 29px;
+        }
+        &-descr {
+        }
+    }
+
+    &__media {
+        &-img {
+
+        }
+    }
+    &__button {
+        @include main-button;
+        background-color: #F9F8F8;
+        border: 2px solid #335B6B;
+        margin: 0 auto;
+    }
+}
+
+.video {
+    text-align: center;
+    background-image: url(images/videoBg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 179px 0 543px;
+    margin-bottom: 140px;
+    &__subtitle {
+        @include section__subtitle;
+        margin-bottom: 7px;
+        color: $greenColor;
+    }
+    &__title {
+        @include section__title;
+        margin-bottom: 24px;
+    }
+    &__descr {
+        max-width: 671px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    &__btn {
+        width: 107px;
+        height: 107px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $greenColor;
+        margin: 0 auto;
+        border-radius: 50%;
+        box-shadow: -4px 10px 12px #DBD1B5;
+        &-img {
+        }
+    }
+}
+
+
+
+
