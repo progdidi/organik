@@ -14,6 +14,8 @@ import NewsArticlePage from "./pages/NewsArticlePage/NewsArticlePage";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import LicensePage from "./pages/LicensePage/LicensePage";
+import ChangelogPage from "./pages/ChangelogPage/ChangelogPage";
+import ProtectedPage from "./pages/ProtectedPage/ProtectedPage";
 
 function App() {
   return (
@@ -33,7 +35,10 @@ function App() {
         {/* <NewsArticlePage/> */}
         {/* <ContactsPage/> */}
         {/* <ErrorPage/> */}
-        <LicensePage/>
+        {/* <LicensePage/> */}
+        {/* <ChangelogPage/> */}
+        <ProtectedPage/>
+
       </main>
       <Footer/>
     </div>
