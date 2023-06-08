@@ -5,6 +5,7 @@ import AboutUsPage from "./pages/AboutUsPage/AboutUsPage";
 import ShopPage from "./pages/ShopPage/ShopPage";
 import ProductPage from "./pages/ProductPage/ProductPage";
 import ServicesPage from "./pages/ServicesPage/ServicesPage";
+import QualityPage from "./pages/QualityPage/QualityPage";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         {/* <AboutUsPage/> */}
         {/* <ShopPage/> */}
         {/* <ProductPage/> */}
-        <ServicesPage/>
+        {/* <ServicesPage/> */}
+        <QualityPage/>
       </main>
       <Footer/>
     </div>
