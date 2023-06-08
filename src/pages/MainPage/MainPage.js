@@ -213,7 +213,7 @@ const MainPage = () => {
                 </div>
 
                 <div className="news__items">
-                    <NewsArticle/>
+                    
                 </div>
             </div>
         </section>

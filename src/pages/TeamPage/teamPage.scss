@@ -1,0 +1,29 @@
+@import '../../style/base/vars';
+@import '../../style/base/mixins';
+
+.team {
+    padding: 150px 0 120px;
+    
+    &__subtitle {
+        @include section__subtitle;
+        color: $greenColor;
+        text-align: center;
+    }
+    &__title {
+        @include section__title;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    &__descr {
+        max-width: 852px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 42px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 27px;
+        grid-row-gap: 42px;
+    }
+}

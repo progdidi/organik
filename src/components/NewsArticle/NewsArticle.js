@@ -1,15 +1,15 @@
 import './newsArticle.scss';
 
-const NewsArticle = () => {
+const NewsArticle = ({date, author, title, descr, link}) => {
     return ( 
         <>
         <div class="news-article">
-            <p class="news-article__date">25 Nov</p>
+            <p class="news-article__date">{date}</p>
             <div class="news-article__info">
-                <p class="news-article__info-author">By Rachi Card</p>
-                <h6 class="news-article__info-title">The Benefits of Vitamin D & How to Get It</h6>
-                <p class="news-article__info-text">Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                <button class="news-article__info-btn">Read More</button>
+                <p class="news-article__info-author">By {author}</p>
+                <h6 class="news-article__info-title">{title}</h6>
+                <p class="news-article__info-text">{descr}</p>
+                <a href={link} class="news-article__info-btn">Read More</a>
             </div>
         </div>
         </>

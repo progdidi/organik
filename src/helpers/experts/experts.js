@@ -1,6 +1,9 @@
 import bacardo from './images/bacardo.jpg';
 import loreno from './images/loreno.jpg';
 import pelore from './images/pelore.jpg';
+import allen from './images/allen.jpg';
+import kneightly from './images/kneightly.jpg';
+import lawrence from './images/lawrence.jpg';
 
 const experts = [
     {
@@ -32,6 +35,36 @@ const experts = [
         instagram: '',
         id: 3
     },
+
+    {
+        img: kneightly,
+        name: 'Keira Knightley',
+        position: 'Farmer',
+        facebook: '',
+        twitter: '',
+        instagram: '',
+        id: 4
+    },
+
+    {
+        img: lawrence,
+        name: 'Scott Lawrence',
+        position: 'Designer',
+        facebook: '',
+        twitter: '',
+        instagram: '',
+        id: 5
+    },
+
+    {
+        img: allen,
+        name: 'Karen Allen',
+        position: 'Farmer',
+        facebook: '',
+        twitter: '',
+        instagram: '',
+        id: 6
+    }
 ]
 
 export {experts}
