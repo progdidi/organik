@@ -1,0 +1,36 @@
+@import '../../style/base/vars';
+@import '../../style/base/mixins';
+
+.license {
+    padding: 150px 0 50px;
+    &__inner {
+        max-width: 1255px;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        &-title {
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 47px;
+        }
+        &-content {
+            max-width: 831px;
+        }
+        &-text {
+            margin-bottom: 20px;
+            span {
+                font-weight: 700;
+            }
+        }
+        &-subtitle {
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 35px;
+            margin-top: 45px;
+            margin-bottom: 11px;
+        }
+    }
+}
+

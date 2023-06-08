@@ -13,6 +13,7 @@ import NewsPage from "./pages/NewsPage/NewsPage";
 import NewsArticlePage from "./pages/NewsArticlePage/NewsArticlePage";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import LicensePage from "./pages/LicensePage/LicensePage";
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
         {/* <NewsPage/> */}
         {/* <NewsArticlePage/> */}
         {/* <ContactsPage/> */}
-        <ErrorPage/>
+        {/* <ErrorPage/> */}
+        <LicensePage/>
       </main>
       <Footer/>
     </div>
