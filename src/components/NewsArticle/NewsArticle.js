@@ -1,9 +1,9 @@
 import './newsArticle.scss';
 
-const NewsArticle = ({date, author, title, descr, link}) => {
+const NewsArticle = ({date, author, title, descr, link, cover}) => {
     return ( 
         <>
-        <div class="news-article">
+        <div class="news-article" style={{ backgroundImage: `url(${cover})` }}>
             <p class="news-article__date">{date}</p>
             <div class="news-article__info">
                 <p class="news-article__info-author">By {author}</p>

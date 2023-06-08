@@ -1,0 +1,9 @@
+.news-page {
+    padding: 120px 0;
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 46px;
+        grid-row-gap: 115px;
+    }
+}
