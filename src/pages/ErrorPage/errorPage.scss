@@ -1,0 +1,31 @@
+@import '../../style/base/vars';
+@import '../../style/base/mixins';
+
+.error {
+    background-image: url(images/error.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 214px 0;
+    margin-bottom: 130px;
+    &__inner {
+        max-width: 533px;
+        margin-left: auto;
+    }
+    &__img {
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 70px;
+        line-height: 82px;
+    }
+    &__descr {
+        margin-bottom: 20px;
+    }
+    &__link {
+        @include main-button;
+        background-color: $mainColor;
+        color: #fff;
+        padding: 28px 31px;
+    }
+}

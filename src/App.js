@@ -12,6 +12,7 @@ import TeamPage from "./pages/TeamPage/TeamPage";
 import NewsPage from "./pages/NewsPage/NewsPage";
 import NewsArticlePage from "./pages/NewsArticlePage/NewsArticlePage";
 import ContactsPage from "./pages/ContactsPage/ContactsPage";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
         {/* <TeamPage/> */}
         {/* <NewsPage/> */}
         {/* <NewsArticlePage/> */}
-        <ContactsPage/>
+        {/* <ContactsPage/> */}
+        <ErrorPage/>
       </main>
       <Footer/>
     </div>
