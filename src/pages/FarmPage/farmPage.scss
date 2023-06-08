@@ -1,0 +1,72 @@
+@import '../../style/base/vars';
+@import '../../style/base/mixins';
+
+.farm-banner {
+    &__img {
+
+    }
+}
+
+.farm {
+    margin-bottom: 120px;
+    position: relative;
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 68px;
+        &-main {
+            box-shadow: 0px 14px 36px rgba(204, 204, 204, 0.25);
+            padding: 97px 83px;
+        }
+        &-title {
+            font-weight: 800;
+            font-size: 70px;
+            line-height: 82px;
+            margin-bottom: 20px;
+        }
+        &-descr {
+        }
+    }
+
+    .farm__info {
+        background-color: #FAFAFA;
+        border-radius: 0px 30px 30px 0px;
+        padding: 106px 111px;
+        &-item {
+            
+        }
+        &-category {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 29px;
+            color: $mainColor;
+        }
+        &-text {
+        }
+    }
+
+    &__content {
+        max-width: 937px;
+        margin: 0 auto;
+        &-title {
+            margin-bottom: 24px;
+            font-weight: 800;
+            font-size: 35px;
+            line-height: 41px;
+            margin-top: 30px;
+        }
+        &-text {
+            margin-bottom: 10px;
+        }
+        &-img {
+            margin-bottom: 70px;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+
+
+
