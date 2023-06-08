@@ -1,0 +1,21 @@
+@import '../../style/base/vars';
+@import '../../style/base/mixins';
+
+.social-list {
+    display: flex;
+    gap: 15px;
+    &__item {
+    }
+    
+    &__link {
+        background-color: #EFF6F1;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-img {
+        }
+    }
+}

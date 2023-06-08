@@ -11,6 +11,7 @@ import FarmPage from "./pages/FarmPage/FarmPage";
 import TeamPage from "./pages/TeamPage/TeamPage";
 import NewsPage from "./pages/NewsPage/NewsPage";
 import NewsArticlePage from "./pages/NewsArticlePage/NewsArticlePage";
+import ContactsPage from "./pages/ContactsPage/ContactsPage";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
         {/* <FarmPage/> */}
         {/* <TeamPage/> */}
         {/* <NewsPage/> */}
-        <NewsArticlePage/>
+        {/* <NewsArticlePage/> */}
+        <ContactsPage/>
       </main>
       <Footer/>
     </div>
