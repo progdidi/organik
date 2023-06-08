@@ -1,0 +1,26 @@
+@import '../../style/base/vars';
+@import '../../style/base/mixins';
+
+
+.standart {
+    max-width: 451px;
+    &__overlay {
+    }
+    &__img {
+        margin-bottom: 21px;
+        border-radius: 30px;
+    }
+    &__name {
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 29px;
+        margin-bottom: 2px;
+    }
+    &__category {
+        font-family: 'Yellowtail', sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+        color: $greenColor;
+    }
+}
