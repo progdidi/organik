@@ -50,28 +50,30 @@ const MainPage = () => {
                         <h6 className="about__info-subtitle">About Us</h6>
                         <h4 className="about__info-title">We Believe in Working Accredited Farmers</h4>
                         <p className="about__info-text">Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-
-                        <div className="about__item">
-                            <img src={aboutItem1} alt="" className="about__item-img" />
-                            <div className="about__item-info">
-                                <h6 className="about__item-title">Organic Foods Only</h6>
-                                <p className="about__item-text">Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                        <div className="about__items">
+                            <div className="about__item">
+                                <img src={aboutItem1} alt="" className="about__item-img" />
+                                <div className="about__item-info">
+                                    <h6 className="about__item-title">Organic Foods Only</h6>
+                                    <p className="about__item-text">Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                                </div>
+                            </div>
+                            <div className="about__item">
+                                <img src={aboutItem2} alt="" className="about__item-img" />
+                                <div className="about__item-info">
+                                    <h6 className="about__item-title">Quality Standards</h6>
+                                    <p className="about__item-text">Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
+                                </div>
                             </div>
                         </div>
-                        <div className="about__item">
-                            <img src={aboutItem2} alt="" className="about__item-img" />
-                            <div className="about__item-info">
-                                <h6 className="about__item-title">Quality Standards</h6>
-                                <p className="about__item-text">Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                            </div>
-                        </div>
+                        
 
                         <a href="" className="about__link">Shop Now</a>
                     </div>
                 </div>
             </div>
         </section>
-{/*  
+ 
         <section className="products">
             <div className="container">
                 <h6 className="products__subtitle">Categories </h6>
@@ -94,7 +96,7 @@ const MainPage = () => {
                 <button className="products__btn">Load More</button>
             </div>
         </section>
-
+{/* 
         <section className="review">
             <div className="container">
                 <div className="review__inner">

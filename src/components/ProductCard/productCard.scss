@@ -3,7 +3,8 @@
 
 .product-card {
     display: block;
-    width: 335px;
+    max-width: 335px;
+    min-width: 200px;
     padding: 29px 26px 17px 30px;
     background-color: $backgroundColor;
     border-radius: 30px;
@@ -56,4 +57,17 @@
 .rating {
 }
 .rating__star {
+}
+
+@media (max-width: 1420px) {
+    .product-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .product-card {
+        width: 70%;
+        margin: 0 auto;
+    }
 }

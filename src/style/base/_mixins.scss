@@ -1,3 +1,15 @@
+@mixin _1120 {
+    @media (max-width: 1120px){
+        @content;
+    }
+}
+
+@mixin _700 {
+    @media (max-width: 700px){
+        @content;
+    }
+}
+
 @mixin section__subtitle {
     font-family: 'Yellowtail', sans-serif;
     font-weight: 400;
@@ -9,6 +21,10 @@
     font-weight: 800;
     font-size: 50px;
     line-height: 59px;
+    @include _1120 {
+        font-size: 42px;
+        line-height: 51px;
+    }
 }
 
 @mixin main-button {    
@@ -31,4 +47,11 @@
         transform: translateY(-50%);
 
     }
+
+    @include _700 {
+        width: 200px;
+        padding: 25px 32px 25px 28px;
+        text-align: center;
+    }
 }
+
