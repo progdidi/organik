@@ -20,9 +20,9 @@ import ProtectedPage from "./pages/ProtectedPage/ProtectedPage";
 function App() {
   return (
     <div className="App">
-      {/* <Header/> */}
+      <Header/>
       <main className="main">
-        {/* <MainPage/> */}
+        <MainPage/>
         {/* <AboutUsPage/> */}
         {/* <ShopPage/> */}
         {/* <ProductPage/> */}

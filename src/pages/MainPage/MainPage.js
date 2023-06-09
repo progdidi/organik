@@ -71,7 +71,7 @@ const MainPage = () => {
                 </div>
             </div>
         </section>
-
+{/*  
         <section className="products">
             <div className="container">
                 <h6 className="products__subtitle">Categories </h6>
@@ -217,7 +217,7 @@ const MainPage = () => {
                 </div>
             </div>
         </section>
-
+*/}
         <Newsletter/>
 
         </>

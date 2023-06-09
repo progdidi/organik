@@ -43,7 +43,8 @@ const Header = () => {
                             <div className="cart-btn">
                                 <img src={cartBtn} alt="" className="cart-btn__img" />
                             </div>
-                            Cart(<span>0</span>)
+                            <p className="cart-btn__text">Cart(<span>0</span>)</p>
+                            
                         </button>
                     </div>
                 </div>

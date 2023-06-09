@@ -136,7 +136,7 @@
                 order: 3;
                 &__btn {
                     display: flex;
-                    margin: 0 20px;
+                    margin: 0 10px;
                 }
                 &__list {
                     position: absolute;
@@ -211,6 +211,7 @@
 
 @media (max-width: 780px) {
     .header {
+        padding: 18px 0;
         &__inner {
             .header__buttons {
                 .search-form {
@@ -225,6 +226,19 @@
                     }
                     &__btn {
                     }
+                }
+
+                .cart {
+                    width: 46px;
+                    padding: 0;
+                    border: none;
+                    &-btn {
+                        margin-right: 0;
+                        &__text {
+                            display: none;
+                        }
+                    }
+                    
                 }
                 
             }

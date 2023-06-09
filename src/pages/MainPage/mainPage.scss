@@ -87,7 +87,8 @@
     margin-bottom: 176px;
     &__inner {
         display: grid;
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
     }
     &__img {
     }
@@ -359,6 +360,133 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 46px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .promo {
+        margin-bottom: 70px;
+    }
+
+    .posters {
+        margin-bottom: 70px;
+        &__item {
+            padding: 70px 45px;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .promo {
+        padding: 165px 0;
+        &__title {
+            font-size: 60px;
+            line-height: 66px;
+        }
+    }
+
+    .about {
+        padding-top: 47px;
+        padding-bottom: 77px;
+        &__info {
+            padding-top: 70px;
+        }
+        &__item {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .promo {
+        padding: 165px 0;
+        &__subtitle {
+            text-align: center;
+        }
+        &__title {
+            margin: 0 auto;
+            max-width: 80%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        &__link {
+            margin: 0 auto;
+        }
+    }
+
+    .posters {
+        &__inner {
+            grid-gap: 15px;
+        }
+        &__item {
+            padding: 60px 30px;
+            &-title {
+                font-size: 36px;
+                line-height: 41px;
+            }
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    .promo {
+        &__title {
+            max-width: 90%;
+        }
+    }
+
+    .posters {
+        &__item {
+            padding: 40px 20px;
+            &-subtitle {
+                font-size: 26px;
+                line-height: 31px;
+            }
+            &-title {
+                font-size: 22px;
+                line-height: 27px;
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .promo {
+        &__title {
+            font-size: 50px;
+            line-height: 56px;
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .promo {
+        &__title {
+            font-size: 44px;
+            line-height: 48px;
+        }
+
+        &__link {
+            width: 200px;
+            text-align: center;
+            padding: 23px 32px;
+        }
+    }
+
+    .posters {
+        &__inner {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__item {
+            &-title {
+                max-width: 70%;
+            }
+        }
     }
 }
 
