@@ -37,10 +37,10 @@ function App() {
         {/* <ErrorPage/> */}
         {/* <LicensePage/> */}
         {/* <ChangelogPage/> */}
-        <ProtectedPage/>
+        {/* <ProtectedPage/> */}
 
       </main>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

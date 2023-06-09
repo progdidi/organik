@@ -33,7 +33,7 @@ html, body {
 .container__fluid {
     max-width: 1605px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 body {
@@ -54,4 +54,6 @@ h1, h2, h3, h4, h5, h6{
     background-color: $mainColor;
     color: #fff;
 }
+
+@import './base/media';
 

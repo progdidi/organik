@@ -9,7 +9,7 @@ const ProtectedPage = () => {
     return ( 
         <>
             <PagePromo 
-                title="Licenses"
+                title="Protected Page"
                 bgImage={banner}
             />
 

@@ -7,13 +7,14 @@ import './header.scss';
 
 const Header = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
+    const [isSearchExpanded, setIsSearchExpanded] = useState(false);
 
     return ( 
         <>
         <header className="header">
             <div className="container__fluid">
                 <div className="header__inner">
-                    <a href="" className="logo"><img src={logo} alt="" className="logo" /></a>
+                    <a href="" className="logo"><img src={logo} alt="" className="logo__img" /></a>
                     <nav className="menu">
                         <button className="menu__btn" onClick={() => {setIsNavExpanded(!isNavExpanded);}}>
                             <span></span>
@@ -32,8 +33,8 @@ const Header = () => {
 
                     <div className="header__buttons">
                         <form action="" className="search-form">
-                            <input type="text" className="search-form__input" />
-                            <button className="search-form__btn">
+                            <input type="text" className={isSearchExpanded ? "search-form__input search-form__input-active" : "search-form__input"} />
+                            <button className="search-form__btn" onClick={() => {setIsSearchExpanded(!isSearchExpanded);}}>
                                 <img src={searchBtn} alt="" className="search-form__btn-img" />
                             </button>
                         </form>
