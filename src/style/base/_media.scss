@@ -47,3 +47,10 @@
         max-width: 920px;
     }
 }
+
+@media (max-width: 420px) {
+    body {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}

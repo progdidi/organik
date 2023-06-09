@@ -12,18 +12,21 @@ const Footer = () => {
                     <div className="footer__top-inner">
                         <div className="footer__contacts">
                         <h4 className="footer__title">Contact Us</h4>
-                        <div className="footer__contacts-item">
-                            <h6 className="footer__contacts-title">Email</h6>
-                            <a href="" className="footer__contacts-text">needhelp@Organia.com</a>
+                        <div className="footer__contacts-items">
+                            <div className="footer__contacts-item">
+                                <h6 className="footer__contacts-title">Email</h6>
+                                <a href="" className="footer__contacts-text">needhelp@Organia.com</a>
+                            </div>
+                            <div className="footer__contacts-item">
+                                <h6 className="footer__contacts-title">Phone</h6>
+                                <a href="" className="footer__contacts-text">666 888 888</a>
+                            </div>
+                            <div className="footer__contacts-item">
+                                <h6 className="footer__contacts-title">Address</h6>
+                                <p className="footer__contacts-text">88 road, borklyn street, USA</p>
+                            </div>
                         </div>
-                        <div className="footer__contacts-item">
-                            <h6 className="footer__contacts-title">Phone</h6>
-                            <a href="" className="footer__contacts-text">666 888 888</a>
-                        </div>
-                        <div className="footer__contacts-item">
-                            <h6 className="footer__contacts-title">Address</h6>
-                            <p className="footer__contacts-text">88 road, borklyn street, USA</p>
-                        </div>
+                        
                         </div>
 
                         <div className="footer__info">
