@@ -10,6 +10,12 @@
     }
 }
 
+@mixin _520 {
+    @media (max-width: 520px){
+        @content;
+    }
+}
+
 @mixin section__subtitle {
     font-family: 'Yellowtail', sans-serif;
     font-weight: 400;
@@ -24,6 +30,11 @@
     @include _1120 {
         font-size: 42px;
         line-height: 51px;
+    }
+
+    @include _520 {
+        font-size: 38px;
+        line-height: 46px;
     }
 }
 
