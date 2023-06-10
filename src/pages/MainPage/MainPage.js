@@ -96,7 +96,7 @@ const MainPage = () => {
                 <button className="products__btn">Load More</button>
             </div>
         </section>
-{/* 
+
         <section className="review">
             <div className="container">
                 <div className="review__inner">
@@ -186,7 +186,7 @@ const MainPage = () => {
                 </div>
             </div>
         </section>
-
+{/* 
         <div className="categories">
             <div className="container__fluid">
                 <div className="categories__items">
