@@ -23,10 +23,10 @@ function App() {
       <Header/>
       <main className="main">
         {/* <MainPage/> */}
-        <AboutUsPage/>
+        {/* <AboutUsPage/> */}
         {/* <ShopPage/> */}
         {/* <ProductPage/> */}
-        {/* <ServicesPage/> */}
+        <ServicesPage/>
         {/* <QualityPage/> */}
         {/* <StandartPage/> */}
         {/* <FarmPage/> */}

@@ -107,6 +107,112 @@
     }
 }
 
+@media (max-width: 1300px) {
+    .services {
+        padding: 100px 0;
+        &__title {
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+
+    .video {
+        padding-bottom: 300px;
+    }
+}
+
+@media (max-width: 950px) {
+    .services {
+        &__inner {
+            align-items: center;
+            flex-direction: column;
+        }
+        &__items {
+            padding-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 20px;
+            &.left {
+                .services__item {
+                    align-items: center;
+                    text-align: center;
+                    max-width: 240px;
+                }
+                
+            }
+
+            &.right {
+                .services__item {
+                    align-items: center;
+                    text-align: center;
+                    max-width: 240px;
+                }
+            }
+        }
+
+        &__media {
+            object-fit: cover;
+            max-width: 70%;
+        }
+    }
+
+    .video {
+        padding-bottom: 100px 200px;
+    }
+}
+
+@media (max-width: 800px) {
+    .services {
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
+            &.left {
+                .services__item {
+                    max-width: 400px;
+                }
+                
+            }
+
+            &.right {
+                .services__item {
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+
+    .video {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 0 100px;
+        &__descr {
+            max-width: 90%;
+            margin-bottom: 20px;
+        }
+        &__btn {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    .video {
+        &__descr {
+        }
+        &__btn {
+            width: 40px;
+            height: 40px;
+            &-img {
+                object-fit: cover;
+                width: 50%;
+            }
+        }
+    }
+}
+
 
 
 

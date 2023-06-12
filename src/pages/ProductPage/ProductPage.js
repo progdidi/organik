@@ -40,8 +40,11 @@ const ProductPage = () => {
                             </p>
 
                             <div className="product__buy">
-                                <label htmlFor="" className="product__quantity-label">Quantity :</label>
-                                <input type="text" className="product__quantity-input" placeholder='1'/>
+                                <div className="product__quantity">
+                                    <label htmlFor="" className="product__quantity-label">Quantity :</label>
+                                    <input type="text" className="product__quantity-input" placeholder='1'/>
+                                </div>
+                                
 
                                 <div className="product__buy-btn">Add To Cart</div>
                             </div>

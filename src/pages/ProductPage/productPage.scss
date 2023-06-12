@@ -111,6 +111,7 @@
             font-size: 20px;
             line-height: 23px;
             color: $mainColor;
+            margin-right: 30px;
         }
         .product__quantity-input {
             width: 134px;
@@ -146,5 +147,85 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .product {
+        padding: 70px 0;
+        margin-bottom: 70px;
+        &__add {
+            &-info {
+                max-width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: 890px) {
+    .product {
+        &__main {
+            flex-direction: column-reverse;
+            &-media {
+                object-fit: cover;
+                width: 60%;
+            }
+            &-info {
+                padding-top: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .product__descr {
+                    text-align: center;
+                }
+
+                .product__quantity-input {
+                    padding: 22px 50px;
+                }
+            }
+        }
+        &__add {
+            &-btn {
+                &.descr {
+                    max-width: 270px;
+                }
+                &.info {
+                    max-width: 270px;
+                }
+                padding: 15px 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 890px) {
+    .product {
+        &__main {
+            &-media {
+            }
+            &-info {
+            }
+        }
+        &__add {
+            &-btn {
+                font-size: 17px;
+                line-height: 21px;
+                &.descr {
+                    max-width: 180px;
+                }
+                &.info {
+                    max-width: 180px;
+                }
+                padding: 7px 17px;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .product {
+        &__buy {
+            flex-direction: column;
+        }
     }
 }
