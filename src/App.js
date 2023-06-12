@@ -31,10 +31,10 @@ function App() {
         {/* <StandartPage/> */}
         {/* <FarmPage/> */}
         {/* <TeamPage/> */}
-        <NewsPage/>
+        {/* <NewsPage/> */}
         {/* <NewsArticlePage/> */}
         {/* <ContactsPage/> */}
-        {/* <ErrorPage/> */}
+        <ErrorPage/>
         {/* <LicensePage/> */}
         {/* <ChangelogPage/> */}
         {/* <ProtectedPage/> */}

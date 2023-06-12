@@ -49,13 +49,17 @@ const ContactsPage = () => {
                                 
                             </div>
 
-                            <SocialList/>
+                            <div className="contacts__social">
+                                <SocialList/>
+                            </div>
+
+                            
                         </div>
                     </div>
                     
                 </div>
             </section>
-
+ 
             <section className="location">
                 <div className="container">
                     <div className="location__inner">
@@ -108,8 +112,7 @@ const ContactsPage = () => {
                     </form>
                 </div>
             </div>
-
-            
+    
             <Newsletter/>
         </>
      );
