@@ -27,3 +27,40 @@
     }
 }
 
+@media (max-width: 900px) {
+    .changelog {
+        &__content {
+            max-width: 70%;
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .changelog {
+        &__content {
+            padding: 26px 22px;
+            max-width: 90%;
+            &-img {
+                width: 40%;
+            }
+            &-text {
+                span {
+                    font-size: 28px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .changelog {
+        &__content {
+            &-img {
+                width: 30%;
+            }
+            
+        }
+    }
+}
+

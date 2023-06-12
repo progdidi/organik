@@ -34,10 +34,10 @@ function App() {
         {/* <NewsPage/> */}
         {/* <NewsArticlePage/> */}
         {/* <ContactsPage/> */}
-        <ErrorPage/>
+        {/* <ErrorPage/> */}
         {/* <LicensePage/> */}
         {/* <ChangelogPage/> */}
-        {/* <ProtectedPage/> */}
+        <ProtectedPage/>
 
       </main>
       <Footer/>

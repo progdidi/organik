@@ -2,9 +2,8 @@
 @import '../../style/base/mixins';
 
 .license {
-    padding: 150px 0 50px;
+    padding: 70px 0 50px;
     &__inner {
-        max-width: 1255px;
     }
     &__item {
         display: flex;
@@ -16,10 +15,12 @@
             line-height: 47px;
         }
         &-content {
-            max-width: 831px;
+            min-width: 70%;
+            max-width: 70%;
         }
         &-text {
             margin-bottom: 20px;
+            text-align: left;
             span {
                 font-weight: 700;
             }
@@ -30,6 +31,26 @@
             line-height: 35px;
             margin-top: 45px;
             margin-bottom: 11px;
+        }
+    }
+}
+
+@media (max-width: 890px) {
+    .license {
+        &__item{
+          flex-direction: column;
+          &-title {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          &-content {
+            max-width: 90%;
+            margin: 0 auto;
+          }
+          &-subtitle {
+            text-align: center;
+            margin-bottom: 20px;
+          }
         }
     }
 }

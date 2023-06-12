@@ -9,7 +9,7 @@ const ChangelogPage = () => {
     return ( 
         <>
             <PagePromo 
-                title="Licenses"
+                title="Changelog"
                 bgImage={banner}
             />
 
