@@ -26,10 +26,10 @@ function App() {
         {/* <AboutUsPage/> */}
         {/* <ShopPage/> */}
         {/* <ProductPage/> */}
-        <ServicesPage/>
+        {/* <ServicesPage/> */}
         {/* <QualityPage/> */}
         {/* <StandartPage/> */}
-        {/* <FarmPage/> */}
+        <FarmPage/>
         {/* <TeamPage/> */}
         {/* <NewsPage/> */}
         {/* <NewsArticlePage/> */}
