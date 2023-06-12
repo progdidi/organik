@@ -29,9 +29,9 @@ function App() {
         {/* <ServicesPage/> */}
         {/* <QualityPage/> */}
         {/* <StandartPage/> */}
-        <FarmPage/>
+        {/* <FarmPage/> */}
         {/* <TeamPage/> */}
-        {/* <NewsPage/> */}
+        <NewsPage/>
         {/* <NewsArticlePage/> */}
         {/* <ContactsPage/> */}
         {/* <ErrorPage/> */}

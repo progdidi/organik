@@ -2,8 +2,7 @@
 @import '../../style/base/mixins';
 
 .team {
-    padding: 150px 0 120px;
-    
+    padding: 70px 0 120px;
     &__subtitle {
         @include section__subtitle;
         color: $greenColor;
@@ -25,5 +24,25 @@
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 27px;
         grid-row-gap: 42px;
+    }
+}
+
+@media (max-width: 970px) {
+    .team {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+
+@media (max-width: 640px) {
+    .team {
+        &__items {
+            max-width: 90%;
+            margin: 0 auto;
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+        }
     }
 }

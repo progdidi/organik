@@ -24,22 +24,26 @@ const FarmPage = () => {
                         
                         <table className="farm__info">
                             <tr className="farm__info-item">
-                                <td className="farm__info-category">Date :</td>
+                                <td className="farm__info-category">Date</td>
+                                <td> :</td>
                                 <td className="farm__info-text">December 4, 2022</td>
                             </tr>
 
                             <tr className="farm__info-item">
-                                <td className="farm__info-category">Client :</td>
+                                <td className="farm__info-category">Client</td>
+                                <td> :</td>
                                 <td className="farm__info-text">Kevin Martin</td>
                             </tr>
 
                             <tr className="farm__info-item">
-                                <td className="farm__info-category">Category  : </td>
+                                <td className="farm__info-category">Category</td>
+                                <td> :</td>
                                 <td className="farm__info-text">Agriculture , Eco</td>
                             </tr>
 
                             <tr className="farm__info-item">
-                                <td className="farm__info-category">Service     :</td>
+                                <td className="farm__info-category">Service</td>
+                                <td> :</td>
                                 <td className="farm__info-text">Organic Products</td>
                             </tr>
                         </table>

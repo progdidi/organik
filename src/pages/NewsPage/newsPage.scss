@@ -7,3 +7,12 @@
         grid-row-gap: 115px;
     }
 }
+
+@media (max-width: 1500px) {
+    .news-page {
+        &__items {
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+        }
+    }
+}
