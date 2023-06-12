@@ -4,7 +4,9 @@ const CategoryCard = ({img, name}) => {
     return ( 
         <>
             <div className="category">
-                <img src={img} alt="" className="category__img" />
+                <div className="category__media">
+                    <img src={img} alt="" className="category__img" />
+                </div>
                 <p className="category__name">{name}</p>
             </div>
         </>

@@ -37,7 +37,7 @@ const AboutUsPage = () => {
 
             <section className="about-us">
                     <div className="about-us__item about-us__item-first">
-                        <div className="container">
+                        <div className="container__fluid">
                             <div className="about-us__item-inner">
                                 <div>
                                     <img src={item1} alt="" className="about-us__item-img" />
@@ -156,7 +156,6 @@ const AboutUsPage = () => {
                     </div>
                 </div>
             </section>
-
             <Newsletter/>
         </>
      );

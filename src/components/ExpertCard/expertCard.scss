@@ -2,7 +2,7 @@
 @import '../../style/base/mixins';
 
 .expert {
-    width: 449px;
+    min-width: 280px;
     background-color: #F9F8F8;;
     border-radius: 30px;
     &__img {

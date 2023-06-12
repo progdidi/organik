@@ -22,8 +22,8 @@ function App() {
     <div className="App">
       <Header/>
       <main className="main">
-        <MainPage/>
-        {/* <AboutUsPage/> */}
+        {/* <MainPage/> */}
+        <AboutUsPage/>
         {/* <ShopPage/> */}
         {/* <ProductPage/> */}
         {/* <ServicesPage/> */}
