@@ -1,0 +1,55 @@
+@import '../../style/base/vars';
+@import '../../style/base/mixins';
+
+.reviews-slider {
+    max-width: 780px;
+    margin: 0 auto;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        &-rating {
+            margin-bottom: 25px;
+        }
+
+        &-text {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        &-author {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 29px;
+        }
+
+        &-position {
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 19px;
+
+        }
+    }
+
+    &__buttons{
+        width: 35px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        padding: 0;
+        width: 8px;
+        height: 8px;
+        background-color: #C4C4C4;
+        border-radius: 50%;
+        &.active {
+            background-color: $greenColor;
+        }
+    }
+}

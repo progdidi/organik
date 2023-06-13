@@ -9,6 +9,8 @@ import ProductCard from '../../components/ProductCard/ProductCard';
 import { products } from '../../helpers/products/products';
 
 //reviews
+import ReviewSlider from '../../components/ReviewSlider/ReviewSlider';
+import {reviews} from '../../helpers/reviews/reviews';
 
 //eco
 import ecoImg from './images/eco/eco.png';
@@ -102,7 +104,20 @@ const MainPage = () => {
                 <div className="review__inner">
                     <h6 className="review__subtitle">Testimonial </h6>
                     <h4 className="review__title">What Our Customer Saying?</h4>
-                    <div className="review__slider"></div>
+                    <div className="review__slider">
+                        {reviews.map((review) => {
+                            return (
+                                <ReviewSlider
+                                    key={review.id}
+                                    img={review.img}
+                                    text={review.text} 
+                                    author={review.name}
+                                    position={review.position}
+                                    rating={review.rating}
+                                />
+                            )                                                        
+                        })}
+                    </div>
                     <div className="review__numbers">
                         <div className="review__number">
                             <h5 className="review__number-title">100%</h5>
