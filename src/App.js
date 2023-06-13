@@ -1,3 +1,5 @@
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import MainPage from "./pages/MainPage/MainPage";
@@ -19,29 +21,34 @@ import ProtectedPage from "./pages/ProtectedPage/ProtectedPage";
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <main className="main">
-        {/* <MainPage/> */}
-        {/* <AboutUsPage/> */}
-        {/* <ShopPage/> */}
-        {/* <ProductPage/> */}
-        {/* <ServicesPage/> */}
-        {/* <QualityPage/> */}
-        {/* <StandartPage/> */}
-        {/* <FarmPage/> */}
-        {/* <TeamPage/> */}
-        {/* <NewsPage/> */}
-        {/* <NewsArticlePage/> */}
-        {/* <ContactsPage/> */}
-        {/* <ErrorPage/> */}
-        {/* <LicensePage/> */}
-        {/* <ChangelogPage/> */}
-        <ProtectedPage/>
+    <Router>
+      <div className="App">
+        <Header/>
 
-      </main>
-      <Footer/>
-    </div>
+        <main className="main"> 
+        <Routes>
+          <Route path="/" element={<MainPage/>} />
+          <Route path="/aboutus" element={<AboutUsPage/>} />
+          <Route path="/shop" element={<ShopPage/>} />
+          <Route path="/product" element={<ProductPage/>} />
+          <Route path="/services" element={<ServicesPage/>} />
+          <Route path="/quality" element={<QualityPage/>} />
+          <Route path="/standart" element={<StandartPage/>} />
+          <Route path="/farm" element={<FarmPage/>} />
+          <Route path="/team" element={<TeamPage/>} />
+          <Route path="/news" element={<NewsPage/>} />
+          <Route path="/newsarticle" element={<NewsArticlePage/>} />
+          <Route path="/contacts" element={<ContactsPage/>} />
+          <Route path="/error" element={<ErrorPage/>} />
+          <Route path="/license" element={<LicensePage/>} />
+          <Route path="/changelog" element={<ChangelogPage/>} />
+          <Route path="/protected" element={<ProtectedPage/>} />
+        </Routes>
+        </main>
+
+        <Footer/>
+      </div>
+    </Router>
   );
 }
 

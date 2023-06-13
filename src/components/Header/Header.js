@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom';
+
 import logo from './images/logo.svg';
 import searchBtn from './images/search.svg';
 import cartBtn from './images/cart.svg';
@@ -22,12 +24,30 @@ const Header = () => {
                             <span></span>
                         </button>
                         <ul className={isNavExpanded ? "menu__list menu__list-active" : "menu__list"}>
-                            <li className="menu__list-item"><a href="" className="menu__list-link">Home</a></li>
-                            <li className="menu__list-item"><a href="" className="menu__list-link">About</a></li>
-                            <li className="menu__list-item"><a href="" className="menu__list-link">Pages</a></li>
-                            <li className="menu__list-item"><a href="" className="menu__list-link">Shop</a></li>
-                            <li className="menu__list-item"><a href="" className="menu__list-link">Projects</a></li>
-                            <li className="menu__list-item"><a href="" className="menu__list-link">News</a></li>
+                            <li className="menu__list-item">
+                                <NavLink to="/" className="menu__list-link">Home</NavLink>
+                            </li>
+
+                            <li className="menu__list-item">
+                                <NavLink to="/aboutus" className="menu__list-link">About</NavLink>
+                            </li>
+
+                            <li className="menu__list-item">
+                                <a href="" className="menu__list-link">Pages</a>
+                            </li>
+
+                            <li className="menu__list-item">
+                                <NavLink to="/shop" className="menu__list-link">Shop</NavLink>
+                            </li>
+
+                            <li className="menu__list-item">
+                                <a href="" className="menu__list-link">Projects</a>
+                            </li>
+
+                            <li className="menu__list-item">
+                                <NavLink to="/news" className="menu__list-link">News</NavLink>
+                            </li>
+
                         </ul>
                     </nav>
 
