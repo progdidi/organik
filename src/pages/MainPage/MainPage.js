@@ -15,8 +15,10 @@ import {reviews} from '../../helpers/reviews/reviews';
 //eco
 import ecoImg from './images/eco/eco.png';
 
+
 //news
 import NewsArticle from '../../components/NewsArticle/NewsArticle';
+import {news} from '../../helpers/news/news';
 
 const MainPage = () => {
     return ( 
@@ -25,7 +27,7 @@ const MainPage = () => {
             <div className="container">
                 <h5 className="promo__subtitle">100% Natural Food</h5>
                 <h1 className="promo__title">Choose the best healthier way of life</h1>
-                <a href="" className="promo__link">Explore Now</a>
+                <a href="" className="promo__link"> <p>Explore Now</p> </a>
             </div>
         </section>
 
@@ -70,7 +72,7 @@ const MainPage = () => {
                         </div>
                         
 
-                        <a href="" className="about__link">Shop Now</a>
+                        <a href="" className="about__link"><p>Shop Now</p></a>
                     </div>
                 </div>
             </div>
@@ -91,11 +93,12 @@ const MainPage = () => {
                                 oldprice={product.oldprice}
                                 img={product.img} 
                                 link={product.link}
+                                rating={product.rating}
                             />
                         )                            
                     })}
                 </div>
-                <button className="products__btn">Load More</button>
+                <button className="products__btn"><p>Load More</p></button>
             </div>
         </section>
 
@@ -152,7 +155,7 @@ const MainPage = () => {
                         <h4 className="offer__title">We Offer Organic For You</h4>
                     </div>
                     
-                    <button className="offer__btn">View All Product</button>
+                    <button className="offer__btn"> <p>View All Product</p> </button>
                 </div>
                 
 
@@ -226,11 +229,23 @@ const MainPage = () => {
                         <h4 className="news__title">Discover weekly content about organic food, & more</h4>
                     </div>
                     
-                    <button className="news__btn">More News</button>
+                    <button className="news__btn"> <p>More News</p> </button>
                 </div>
 
                 <div className="news__items">
-                    
+                    {news.reverse().slice(0, 2).map((news) => {
+                        return (
+                            <NewsArticle
+                                key={news.id}
+                                date={news.date}
+                                author={news.author} 
+                                title={news.title} 
+                                descr={news.descr} 
+                                link={news.link}
+                                cover={news.cover}
+                            />
+                        )                            
+                    })}
                 </div>
             </div>
         </section>

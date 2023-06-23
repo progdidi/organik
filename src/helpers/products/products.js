@@ -22,7 +22,8 @@ const products = [
         title:'Calabrese Broccoli',
         price: 13.00,
         oldprice: 20.00,
-        id: 1
+        id: 1,
+        rating: 4
     },
     
     {
@@ -31,7 +32,8 @@ const products = [
         title:'Fresh Banana Fruites',
         price: 14.00,
         oldprice: 20.00,
-        id: 2
+        id: 2,
+        rating: 4
     },
 
     {
@@ -40,7 +42,8 @@ const products = [
         title:'White Nuts',
         price: 15.00,
         oldprice: 20.00,
-        id: 3
+        id: 3,
+        rating: 4
     },
 
     {
@@ -49,7 +52,8 @@ const products = [
         title:'Vegan Red Tomato',
         price: 13.00,
         oldprice: 20.00,
-        id: 4
+        id: 4,
+        rating: 4
     },
 
     {
@@ -58,7 +62,8 @@ const products = [
         title:'Mung Bean',
         price: 11.00,
         oldprice: 20.00,
-        id: 5
+        id: 5,
+        rating: 4
     },
 
     {
@@ -67,7 +72,8 @@ const products = [
         title:'Brown Hazelnut',
         price: 12.00,
         oldprice: 20.00,
-        id: 6
+        id: 6,
+        rating: 4
     },
 
     {
@@ -76,7 +82,8 @@ const products = [
         title:'Eggs',
         price: 17.00,
         oldprice: 20.00,
-        id: 7
+        id: 7,
+        rating: 4
     },
 
     {
@@ -85,7 +92,8 @@ const products = [
         title:'Zelco Suji Elaichi Rusk',
         price: 13.00,
         oldprice: 20.00,
-        id: 8
+        id: 8,
+        rating: 4
     },
 
     {
@@ -95,7 +103,8 @@ const products = [
         price: 11.00,
         oldprice: 20.00,
         id: 9,
-        offer: true
+        offer: true,
+        rating: 4
     },
 
     {
@@ -105,7 +114,8 @@ const products = [
         price: 12.00,
         oldprice: 20.00,
         id: 10,
-        offer: true
+        offer: true,
+        rating: 4
     },
 
     {
@@ -115,7 +125,8 @@ const products = [
         price: 12.00,
         oldprice: 20.00,
         id: 11,
-        offer: true
+        offer: true,
+        rating: 4
     },
 
     {
@@ -125,7 +136,8 @@ const products = [
         price: 12.00,
         oldprice: 20.00,
         id: 12,
-        offer: true
+        offer: true,
+        rating: 4
     },
 
     {
@@ -135,7 +147,8 @@ const products = [
         price: 11.00,
         oldprice: 20.00,
         id: 13,
-        offer: true
+        offer: true,
+        rating: 4
     },
 
     {
@@ -145,7 +158,8 @@ const products = [
         price: 12.00,
         oldprice: 20.00,
         id: 14,
-        offer: true
+        offer: true,
+        rating: 4
     },
 
     {
@@ -155,7 +169,8 @@ const products = [
         price: 17.00,
         oldprice: 20.00,
         id: 15,
-        offer: true
+        offer: true,
+        rating: 4
     },
 
     {
@@ -165,7 +180,8 @@ const products = [
         price: 15.00,
         oldprice: 20.00,
         id: 16,
-        offer: true
+        offer: true,
+        rating: 4
     }
 ]
 

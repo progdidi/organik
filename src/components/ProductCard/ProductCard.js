@@ -1,21 +1,24 @@
 import './productCard.scss';
-import example from './example.png';
 import star from './star.svg';
+import StarRating from '../StarRating/StarRating';
 
-const ProductCard = ({tag, img, name, price, oldprice}) => {
+const ProductCard = ({tag, img, name, price, oldprice, rating}) => {
     return ( 
         <>
             <a href="#" className="product-card">
                 <p className="product-card__tag">{tag}</p>
                 <img src={img} alt="" className="product-card__img" />
-                <h6 className="product-card__name">{name}</h6>
                 <div className="product-card__about">
-                    <p className="product-card__price old">${oldprice}</p>
-                    <p className="product-card__price">${price}</p>
-                    <div className="rating">
-                        <img src={star} alt="" className="rating__star" />
+                    <h6 className="product-card__name">{name}</h6>
+                    <div className="product-card__details">
+                        <p className="product-card__price old">${oldprice}</p>
+                        <p className="product-card__price">${price}</p>
+                        <div className="rating">
+                            <StarRating ratingValue={rating}/>
+                        </div>
                     </div>
                 </div>
+                
             </a>
         </>
      );

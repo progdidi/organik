@@ -9,6 +9,7 @@
     background-color: $backgroundColor;
     border-radius: 30px;
     text-align: left;
+    position: relative;
     &__tag {
         margin-bottom: 13px;
         display: inline-block;
@@ -22,6 +23,14 @@
 
     }
     &__img {
+        padding-bottom: 100px;
+    }
+
+    &__about {
+        position: absolute;
+        bottom: 17px;
+        left: 26px;
+        right: 26px;
     }
     &__name {
         font-weight: 600;
@@ -29,7 +38,7 @@
         line-height: 23px;
         margin-bottom: 13px;
     }
-    &__about {
+    &__details {
         border-top: 1px solid #DEDDDD;
         display: flex;
         align-items: center;
@@ -53,11 +62,6 @@
     }
 }
 
-
-.rating {
-}
-.rating__star {
-}
 
 @media (max-width: 1420px) {
     .product-card {

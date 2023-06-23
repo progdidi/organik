@@ -61,7 +61,7 @@ const AboutUsPage = () => {
                                             <p className="benefits__item-descr">No growth hormones are used</p>
                                         </div>
                                     </div>
-                                    <button className="about-us__item-btn">Explore More</button>
+                                    <button className="about-us__item-btn"> <p>Explore More</p> </button>
                                 </div>
                             </div>
                         </div>

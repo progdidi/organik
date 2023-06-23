@@ -48,15 +48,19 @@
     display: block;
     padding: 28px 39px;
     position: relative;
-    &::after {
-        content: '';
-        position: absolute;
-        background-image: url(../../images/linkArrow.svg);
-        width: 19px;
-        height: 19px;
-        top: 50%;
-        transform: translateY(-50%);
-
+    p {
+        padding-right: 29px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../../images/linkArrow.svg);
+            width: 19px;
+            height: 19px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
     }
 
     @include _700 {
