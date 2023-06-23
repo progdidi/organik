@@ -32,8 +32,24 @@ const Header = () => {
                                 <NavLink to="/aboutus" className="menu__list-link">About</NavLink>
                             </li>
 
-                            <li className="menu__list-item">
+                            <li className="menu__list-item pages">
                                 <a href="" className="menu__list-link">Pages</a>
+                                <ul className="submenu">
+                                    <li className="submenu__item">
+                                        <NavLink to="/contacts" className="submenu__link">Contacts</NavLink>
+                                    </li>
+
+                                    <li className="submenu__item">
+                                        <NavLink to="/services" className="submenu__link">Services</NavLink>
+                                    </li>
+                                    <li className="submenu__item">
+                                        <NavLink to="/standart" className="submenu__link">Standarts</NavLink>
+                                    </li>
+
+                                    <li className="submenu__item">
+                                        <NavLink to="/license" className="submenu__link">Licences</NavLink>
+                                    </li>
+                                </ul>
                             </li>
 
                             <li className="menu__list-item">
