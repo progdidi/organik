@@ -27,22 +27,22 @@ function App() {
 
         <main className="main"> 
         <Routes>
-          <Route path="/" element={<MainPage/>} />
-          <Route path="/aboutus" element={<AboutUsPage/>} />
-          <Route path="/shop" element={<ShopPage/>} />
-          <Route path="/product" element={<ProductPage/>} />
-          <Route path="/services" element={<ServicesPage/>} />
-          <Route path="/quality" element={<QualityPage/>} />
-          <Route path="/standart" element={<StandartPage/>} />
-          <Route path="/farm" element={<FarmPage/>} />
-          <Route path="/team" element={<TeamPage/>} />
-          <Route path="/news" element={<NewsPage/>} />
-          <Route path="/newsarticle" element={<NewsArticlePage/>} />
-          <Route path="/contacts" element={<ContactsPage/>} />
-          <Route path="/error" element={<ErrorPage/>} />
-          <Route path="/license" element={<LicensePage/>} />
-          <Route path="/changelog" element={<ChangelogPage/>} />
-          <Route path="/protected" element={<ProtectedPage/>} />
+          <Route path="/organik/" element={<MainPage/>} />
+          <Route path="/organik/aboutus" element={<AboutUsPage/>} />
+          <Route path="/organik/shop" element={<ShopPage/>} />
+          <Route path="/organik/product" element={<ProductPage/>} />
+          <Route path="/organik/services" element={<ServicesPage/>} />
+          <Route path="/organik/quality" element={<QualityPage/>} />
+          <Route path="/organik/standart" element={<StandartPage/>} />
+          <Route path="/organik/farm" element={<FarmPage/>} />
+          <Route path="/organik/team" element={<TeamPage/>} />
+          <Route path="/organik/news" element={<NewsPage/>} />
+          <Route path="/organik/newsarticle" element={<NewsArticlePage/>} />
+          <Route path="/organik/contacts" element={<ContactsPage/>} />
+          <Route path="/organik/error" element={<ErrorPage/>} />
+          <Route path="/organik/license" element={<LicensePage/>} />
+          <Route path="/organik/changelog" element={<ChangelogPage/>} />
+          <Route path="/organik/protected" element={<ProtectedPage/>} />
         </Routes>
         </main>
 
