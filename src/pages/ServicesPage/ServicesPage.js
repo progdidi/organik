@@ -17,7 +17,7 @@ const ServicesPage = () => {
     return ( 
         <>
              <PagePromo 
-                title="Shop Single"
+                title="Services"
                 bgImage={banner}
              />
 
