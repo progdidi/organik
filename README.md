@@ -1,3 +1,3 @@
-# React manypage website for shop of organik projects
+# Organik - React project for shop of organik projects
 
 
